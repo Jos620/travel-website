@@ -26,5 +26,15 @@ export default {
 	 */
 	plugins: [
 		'~/plugins/composition-api'
-	]
+	],
+
+	/**
+	 * Auto import components
+	 */
+	components: {
+		dirs: [
+			'~/components',
+			'~/components/global',
+		]
+	}
 }
