@@ -6,7 +6,7 @@ export default function useHandleScroll(amount) {
 
 	const handleScroll = () => {
 		if (window.scrollY >= amount) set(hasScrolled, true)
-		else set(handleScroll, false)
+		else set(hasScrolled, false)
 	}
 
 	onMounted(() => {
