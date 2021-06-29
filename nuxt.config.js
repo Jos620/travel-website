@@ -35,6 +35,7 @@ export default {
 		dirs: [
 			'~/components',
 			'~/components/global',
+			'~/sections'
 		]
 	}
 }
