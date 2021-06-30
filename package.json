@@ -13,7 +13,9 @@
 		"@vue/composition-api": "^1.0.0-rc.12",
 		"@vueuse/core": "^5.0.3",
 		"core-js": "^3.15.1",
-		"nuxt": "^2.15.7"
+		"nuxt": "^2.15.7",
+		"swiper": "^5.3.6",
+		"vue-awesome-swiper": "^4.1.1"
 	},
 	"devDependencies": {
 		"@nuxt/types": "^2.15.7",

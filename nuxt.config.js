@@ -18,6 +18,9 @@ export default {
 
 			// Remix icons
 			{ rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css' },
+
+			// Swiper CSS
+			{ rel: 'stylesheet', href: 'https://unpkg.com/swiper/swiper-bundle.min.css' }
 		]
 	},
 
@@ -25,7 +28,8 @@ export default {
 	 * Plugins
 	 */
 	plugins: [
-		'~/plugins/composition-api'
+		'~/plugins/composition-api',
+		{ src: '~/plugins/vue-awesome-swiper', mode: 'client' }
 	],
 
 	/**
