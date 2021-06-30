@@ -5,5 +5,6 @@
 		<Discover />
 		<Experience />
 		<Video />
+		<Place />
 	</div>
 </template>
