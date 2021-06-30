@@ -3,5 +3,6 @@
 		<Home />
 		<About />
 		<Discover />
+		<Experience />
 	</div>
 </template>
