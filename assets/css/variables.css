@@ -45,7 +45,7 @@
 	--white-color: #fff;
 
 	/* Scroll bar */
-	--scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+	--scroll-bar-color: hsl(var(--hue-color), 12%, 96%);
 	--scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
 
 	/*
