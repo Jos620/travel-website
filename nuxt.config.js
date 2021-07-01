@@ -14,7 +14,7 @@ export default {
 
 		link: [
 			// Favicon
-			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
 
 			// Remix icons
 			{ rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css' },
