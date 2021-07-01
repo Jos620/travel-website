@@ -12,6 +12,12 @@
 					<NavItem @click.native="toggleMenu" link="#place">Place</NavItem>
 				</ul>
 
+				<div class="nav__dark">
+					<!-- Theme change button -->
+					<span class="change-theme-name">{{ isDark ? 'Light' : 'Dark' }} Mode</span>
+					<i class="change-theme" :class="isDark ? 'ri-sun-line' : 'ri-moon-line' " @click="toggleTheme"></i>
+				</div>
+
 				<i class="ri-close-line nav__close" id="nav-close" @click="toggleMenu"></i>
 			</div>
 
@@ -25,6 +31,7 @@
 <script>
 import useShowMenu from '~/composables/useShowMenu'
 import useHandleScroll from '~/composables/useHandleScroll'
+import { useDark, useToggle } from '@vueuse/core'
 
 export default {
 	setup() {
@@ -32,7 +39,17 @@ export default {
 
 		const { hasScrolled } = useHandleScroll(100)
 
-		return { showMenu, toggleMenu, hasScrolled }
+		/* Dark Mode */
+		const isDark = useDark()
+		const toggleTheme = useToggle(isDark)
+
+		return { 
+			showMenu, 
+			toggleMenu, 
+			hasScrolled, 
+			isDark, 
+			toggleTheme 
+		}
 	}
 }
 </script>
@@ -138,5 +155,34 @@ export default {
 .scroll-header .nav__logo,
 .scroll-header .nav__toggle {
 	color: var(--title-color);
+}
+
+/*
+--------------------
+---- Dark Mode ---- |
+--------------------
+*/
+
+.nav__dark {
+	display: flex;
+	align-items: center;
+	column-gap: 2rem;
+	position: absolute;
+	left: 3rem;
+	bottom: 4rem;
+}
+
+.change-theme,
+.change-theme-name {
+	color: var(--text-color);
+}
+
+.change-theme {
+	cursor: pointer;
+	font-size: 1rem;
+}
+
+.change-theme-name {
+	font-size: var(--small-font-size);
 }
 </style>
