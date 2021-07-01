@@ -195,4 +195,12 @@
 		width: 240px;
 	}
 }
+
+/* Tall Screens */
+@media screen and (min-height: 721px) {
+	.home__container,
+	.home__img {
+		height: 720px;
+	}
+}
 </style>

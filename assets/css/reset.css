@@ -83,3 +83,10 @@ input {
 		margin: 0;
 	}
 }
+
+/* Tall Screens */
+@media screen and (min-height: 721px) {
+	body {
+		margin: 0;
+	}
+}
