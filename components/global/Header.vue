@@ -219,7 +219,7 @@ export default Vue.extend({
 		color: var(--white-color);
 		position: absolute;
 		right: 0.8rem;
-		top: 3px;
+		top: 2px;
 	}
 
 	.scroll-header .change-theme {
