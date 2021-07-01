@@ -7,5 +7,6 @@
 		<Video />
 		<Place />
 		<Subscribe />
+		<Sponsor />
 	</div>
 </template>
