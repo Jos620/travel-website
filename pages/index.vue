@@ -1,5 +1,5 @@
 <template>
-	<div class="page__wrapper">
+	<main class="page__wrapper">
 		<Home />
 		<About />
 		<Discover />
@@ -8,5 +8,6 @@
 		<Place />
 		<Subscribe />
 		<Sponsor />
-	</div>
+		<ScrollUp />
+	</main>
 </template>
