@@ -1,5 +1,7 @@
 // prettier-ignore
 export default {
+	target: 'static',
+	
 	/**
 	 * Headers of the page
 	 */
@@ -7,9 +9,15 @@ export default {
 		title: 'Travel Website',
 
 		meta: [
+			/**
+			 * SEO
+			*/
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
-			{ hid: 'description', name: 'description', content: 'An awesome travel website' }
+			{ hid: 'description', name: 'description', content: 'An awesome travel website' },
+			{ name: 'robots', content: 'all' },
+			{ name: 'author', content: 'Mateus Ito Silva <mateusito10@gmail.com>' },
+			{ name: 'keywords', content: 'travel, website, vue, nuxt' },
 		],
 
 		link: [
