@@ -4,20 +4,12 @@
 	</a>
 </template>
 
-<script>
-export default {
-	props: {
-		icon: {
-			type: String,
-			required: true
-		},
+<script lang="ts">
+import Vue from 'vue'
 
-		link: {
-			type: String,
-			required: true
-		}
-	}
-}
+export default Vue.extend({
+	props: ['icon', 'link']
+})
 </script>
 
 <style>

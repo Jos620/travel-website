@@ -10,25 +10,18 @@
 	</SwiperSlide>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
+
 import { SwiperSlide } from 'vue-awesome-swiper'
 
-export default {
-	props: {
-		img: {
-			type: String,
-			required: true
-		},
-		title: {
-			type: String,
-			required: true
-		}
-	},
+export default Vue.extend({
+	props: ['img', 'title'],
 
 	components: {
 		SwiperSlide
 	}
-}
+})
 </script>
 
 <style scoped>
@@ -66,7 +59,6 @@ export default {
 .discover__img:hover {
 	transform: var(--img-scale);
 }
-
 
 /* Large Screens */
 @media screen and (min-width: 1024px) {

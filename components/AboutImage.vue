@@ -4,17 +4,12 @@
 	</div>
 </template>
 
-<script>
-export default {
-	props: {
-		img: {
-			type: String,
-			required: true
-		},
+<script lang="ts">
+import Vue from 'vue'
 
-		size: String
-	}
-}
+export default Vue.extend({
+	props: ['img', 'size']
+})
 </script>
 
 <style scoped>
@@ -39,7 +34,6 @@ export default {
 .about__img--large:hover {
 	transform: var(--img-scale);
 }
-
 
 /* Large Screens */
 @media screen and (min-width: 1024px) {

@@ -1,7 +1,7 @@
 import { onMounted, onUnmounted, ref } from '@vue/composition-api'
 import { set } from '@vueuse/core'
 
-export default function useHandleScroll(amount) {
+export default function useHandleScroll(amount: number) {
 	const hasScrolled = ref(false)
 
 	const handleScroll = () => {

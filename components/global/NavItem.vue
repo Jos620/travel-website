@@ -6,15 +6,12 @@
 	</li>
 </template>
 
-<script>
-export default {
-	props: {
-		link: {
-			type: String,
-			required: true
-		}
-	}
-}
+<script lang="ts">
+import Vue from 'vue'
+
+export default Vue.extend({
+	props: ['link']
+})
 </script>
 
 <style scoped>

@@ -32,6 +32,13 @@ export default {
 		{ src: '~/plugins/vue-awesome-swiper', mode: 'client' }
 	],
 
+	/** 
+	 * Build Modules
+	*/
+	buildModules: [
+		'@nuxt/typescript-build',
+	],
+
 	/**
 	 * Auto import components
 	 */

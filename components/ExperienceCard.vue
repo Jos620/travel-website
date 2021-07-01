@@ -7,15 +7,12 @@
 	</div>
 </template>
 
-<script>
-export default {
-	props: {
-		number: {
-			type: String,
-			required: true
-		}
-	}
-}
+<script lang="ts">
+import Vue from 'vue'
+
+export default Vue.extend({
+	props: ['number']
+})
 </script>
 
 <style scoped>

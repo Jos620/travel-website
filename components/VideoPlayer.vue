@@ -10,18 +10,14 @@
 	</div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import { ref } from '@vue/composition-api'
 
 import useVideoPlayer from '~/composables/useVideoPlayer'
 
-export default {
-	props: {
-		source: {
-			type: String,
-			required: true
-		}
-	},
+export default Vue.extend({
+	props: ['source'],
 
 	setup() {
 		const videoEl = ref(null) // video element
@@ -30,7 +26,7 @@ export default {
 
 		return { videoEl, playing, icon, playPause }
 	}
-}
+})
 </script>
 
 <style scoped>

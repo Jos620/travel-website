@@ -21,40 +21,12 @@
 	</div>
 </template>
 
-<script>
-export default {
-	props: {
-		img: {
-			type: String,
-			required: true
-		},
+<script lang="ts">
+import Vue from 'vue'
 
-		link: {
-			type: String,
-			required: true
-		},
-
-		rating: {
-			type: String,
-			required: true
-		},
-
-		title: {
-			type: String,
-			required: true
-		},
-
-		subtitle: {
-			type: String,
-			required: true
-		},
-
-		price: {
-			type: String,
-			required: true
-		}
-	}
-}
+export default Vue.extend({
+	props: ['img', 'link', 'rating', 'title', 'subtitle', 'price']
+})
 </script>
 
 <style>

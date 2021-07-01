@@ -16,10 +16,12 @@
 	</section>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
+
 import { Swiper } from 'vue-awesome-swiper'
 
-export default {
+export default Vue.extend({
 	components: {
 		Swiper
 	},
@@ -38,7 +40,7 @@ export default {
 
 		return { swiperOptions }
 	}
-}
+})
 </script>
 
 <style scoped>

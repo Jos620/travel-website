@@ -9,17 +9,12 @@
 	</div>
 </template>
 
-<script>
-export default {
-	props: {
-		img: {
-			type: String,
-			required: true
-		},
+<script lang="ts">
+import Vue from 'vue'
 
-		name: String
-	}
-}
+export default Vue.extend({
+	props: ['img', 'name']
+})
 </script>
 
 <style scoped>

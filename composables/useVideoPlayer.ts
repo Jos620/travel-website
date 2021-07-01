@@ -1,7 +1,7 @@
 import { computed, ref } from '@vue/composition-api'
 import { get, set } from '@vueuse/core'
 
-export default function useVideoPlayer(el) {
+export default function useVideoPlayer(el: HTMLVideoElement | any) {
 	const playing = ref(false)
 
 	const playPause = () => {

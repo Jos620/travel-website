@@ -17,16 +17,18 @@
 	</section>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
+
 import useSubmitEmail from '~/composables/useSubmitEmail'
 
-export default {
+export default Vue.extend({
 	setup() {
 		const { email, submitEmail } = useSubmitEmail()
 
 		return { email, submitEmail }
 	}
-}
+})
 </script>
 
 <style scoped>
@@ -83,7 +85,7 @@ export default {
 	}
 
 	.subscribe__input {
-		padding: 0 .5rem;
+		padding: 0 0.5rem;
 	}
 }
 </style>

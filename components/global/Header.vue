@@ -15,7 +15,7 @@
 				<div class="nav__dark">
 					<!-- Theme change button -->
 					<span class="change-theme-name">{{ isDark ? 'Light' : 'Dark' }} Mode</span>
-					<i class="change-theme" :class="isDark ? 'ri-sun-line' : 'ri-moon-line' " @click="toggleTheme"></i>
+					<i class="change-theme" :class="isDark ? 'ri-sun-line' : 'ri-moon-line'" @click="toggleTheme"></i>
 				</div>
 
 				<i class="ri-close-line nav__close" id="nav-close" @click="toggleMenu"></i>
@@ -28,12 +28,14 @@
 	</header>
 </template>
 
-<script>
-import useShowMenu from '~/composables/useShowMenu'
-import useHandleScroll from '~/composables/useHandleScroll'
+<script lang="ts">
+import Vue from 'vue'
 import { useDark, useToggle } from '@vueuse/core'
 
-export default {
+import useShowMenu from '~/composables/useShowMenu'
+import useHandleScroll from '~/composables/useHandleScroll'
+
+export default Vue.extend({
 	setup() {
 		const { showMenu, toggleMenu } = useShowMenu()
 
@@ -43,15 +45,15 @@ export default {
 		const isDark = useDark()
 		const toggleTheme = useToggle(isDark)
 
-		return { 
-			showMenu, 
-			toggleMenu, 
-			hasScrolled, 
-			isDark, 
-			toggleTheme 
+		return {
+			showMenu,
+			toggleMenu,
+			hasScrolled,
+			isDark,
+			toggleTheme
 		}
 	}
-}
+})
 </script>
 
 <style scoped>
@@ -185,7 +187,6 @@ export default {
 .change-theme-name {
 	font-size: var(--small-font-size);
 }
-
 
 /* Medium Screens */
 @media screen and (min-width: 768px) {
