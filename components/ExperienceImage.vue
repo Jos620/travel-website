@@ -66,4 +66,18 @@ export default {
 		width: 160px;
 	}
 }
+
+
+/* Large Screens */
+@media screen and (min-width: 1024px) {
+	.experience__overlay:nth-child(1) {
+		width: 463px;
+		margin-right: 7rem;
+	}
+
+	.experience__overlay:nth-child(2) {
+		width: 220px;
+		top: 3rem;
+	}
+}
 </style>

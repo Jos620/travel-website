@@ -174,4 +174,25 @@
 		bottom: 3rem;
 	}
 }
+
+/* Large Screens */
+@media screen and (min-width: 1024px) {
+	.home__container {
+		grid-template-rows: 2fr .5fr;
+	}
+
+	.home__info {
+		width: 328px;
+		grid-template-columns: 1fr 2fr;
+		column-gap: 2rem;
+	}
+
+	.home__info-title {
+		font-size: var(--normal-font-size);
+	}
+
+	.home__info-img {
+		width: 240px;
+	}
+}
 </style>

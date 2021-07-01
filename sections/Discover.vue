@@ -42,11 +42,19 @@ export default {
 </script>
 
 <style scoped>
+/* Medium Screens */
 @media screen and (min-width: 768px) {
 	.discover__container {
 		width: 610px;
 		margin-inline: auto;
 		padding-top: 2rem;
+	}
+}
+
+/* Large Screens */
+@media screen and (min-width: 1024px) {
+	.discover__container {
+		width: 700px;
 	}
 }
 </style>

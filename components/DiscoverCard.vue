@@ -66,4 +66,21 @@ export default {
 .discover__img:hover {
 	transform: var(--img-scale);
 }
+
+
+/* Large Screens */
+@media screen and (min-width: 1024px) {
+	.discover__card {
+		width: 237px;
+	}
+
+	.discover__data {
+		left: 1.5rem;
+		bottom: 2rem;
+	}
+
+	.discover__title {
+		font-size: var(--h2-font-size);
+	}
+}
 </style>

@@ -60,4 +60,12 @@
 		padding: 0;
 	}
 }
+
+/* Large Screens */
+@media screen and (min-width: 1024px) {
+	.experience__content {
+		margin: var(--mb-1) 0;
+		column-gap: 3.5rem;
+	}
+}
 </style>

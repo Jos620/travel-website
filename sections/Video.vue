@@ -37,4 +37,16 @@
 		justify-content: center;
 	}
 }
+
+
+/* Large Screens */
+@media screen and (min-width: 1024px) {
+	.video__container {
+		grid-template-columns: 0.7fr;
+	}
+
+	.video__description {
+		padding: 0 8rem;
+	}
+}
 </style>

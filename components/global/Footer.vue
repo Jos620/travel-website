@@ -128,9 +128,12 @@ export default {
         flex-direction: row;
         justify-content: space-between;
     }
+}
 
-    .footer__description {
-        margin-right: 1rem;
+/* Large Screens */
+@media screen and (min-width: 1024px) {
+    .footer__content {
+        justify-items: center;
     }
 }
 </style>

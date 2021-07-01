@@ -78,4 +78,17 @@
 		padding: 7rem 0 2rem;
 	}
 }
+
+/* Large Screens */
+@media screen and (min-width: 1024px) {
+	.container {
+		margin-inline: auto;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 1024px;
+	}
+}
 </style>

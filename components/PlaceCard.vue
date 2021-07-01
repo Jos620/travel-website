@@ -129,4 +129,12 @@ export default {
 .place__card:hover .place__img {
 	transform: var(--img-scale);
 }
+
+/* Large Screens */
+@media screen and (min-width: 1024px) {
+	.place__card,
+	.place__img {
+		height: 263px;
+	}
+}
 </style>

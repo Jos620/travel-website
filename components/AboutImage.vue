@@ -39,4 +39,16 @@ export default {
 .about__img--large:hover {
 	transform: var(--img-scale);
 }
+
+
+/* Large Screens */
+@media screen and (min-width: 1024px) {
+	.about__img--small {
+		width: 240px;
+	}
+
+	.about__img--large {
+		width: 290px;
+	}
+}
 </style>

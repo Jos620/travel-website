@@ -33,4 +33,12 @@
 		padding-top: 2rem;
 	}
 }
+
+
+/* Large Screens */
+@media screen and (min-width: 1024px) {
+	.place__container {
+		gap: 3rem 2rem;
+	}
+}
 </style>
