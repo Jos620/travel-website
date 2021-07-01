@@ -71,4 +71,11 @@
 .button--link:hover {
 	background: none;
 }
+
+/* Medium Screens */
+@media screen and (min-width: 768px) {
+	.section {
+		padding: 7rem 0 2rem;
+	}
+}
 </style>

@@ -27,4 +27,20 @@ export default {
 .nav__link:hover {
 	color: var(--text-color);
 }
+
+/* Medium Screens */
+@media screen and (min-width: 768px) {
+	.nav__link {
+		color: var(--white-color);
+		text-transform: initial;
+	}
+
+	.nav__link:hover {
+		color: var(--white-color);
+	}
+
+	.scroll-header .nav__link {
+		color: var(--text-color);
+	}
+}
 </style>

@@ -48,4 +48,25 @@
 	align-items: center;
 	justify-content: center;
 }
+
+/* Medium Screens */
+@media screen and (min-width: 768px) {
+	.about__container {
+		grid-template-columns: repeat(2, 1fr);
+		align-items: center;
+	}
+
+	.about__data,
+	.about__title {
+		text-align: initial;
+	}
+
+	.about__title {
+		margin-bottom: var(--mb-1-5);
+	}
+
+	.about__description {
+		margin-bottom: var(--mb-2);
+	}
+}
 </style>

@@ -25,4 +25,12 @@
 		justify-content: center;
 	}
 }
+
+/* Medium Screens */
+@media screen and (min-width: 568px) {
+	.place__container {
+		grid-template-columns: repeat(3, max-content);
+		padding-top: 2rem;
+	}
+}
 </style>

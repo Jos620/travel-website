@@ -41,7 +41,18 @@ export default {
 }
 </script>
 
+<style scoped>
+@media screen and (min-width: 768px) {
+	.discover__container {
+		width: 610px;
+		margin-inline: auto;
+		padding-top: 2rem;
+	}
+}
+</style>
+
 <style>
+/* Remove the shadow that SwiperJS add */
 .swiper-container-3d .swiper-slide-shadow-left,
 .swiper-container-3d .swiper-slide-shadow-right {
 	background-image: none;

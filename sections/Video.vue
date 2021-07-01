@@ -28,4 +28,13 @@
 		padding: 0;
 	}
 }
+
+/* Medium Screens */
+@media screen and (min-width: 568px) {
+	.video__container {
+		display: grid;
+		grid-template-columns: 0.6fr;
+		justify-content: center;
+	}
+}
 </style>

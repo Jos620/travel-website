@@ -62,4 +62,28 @@ export default {
 .subscribe__input::placeholder {
 	color: var(--text-color);
 }
+
+/* Medium Screens */
+@media screen and (min-width: 568px) {
+	.subscribe__form {
+		width: 470px;
+		margin-inline: auto;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.subscribe__bg {
+		background: none;
+		padding: 0;
+	}
+
+	.subscribe__container {
+		background-color: var(--first-color);
+		padding: 3.5rem;
+	}
+
+	.subscribe__input {
+		padding: 0 .5rem;
+	}
+}
 </style>

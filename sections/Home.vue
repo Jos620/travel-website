@@ -7,7 +7,7 @@
 				<!-- Home - Data -->
 				<span class="home__data-subtitle">Discover your place</span>
 				<h1 class="home__data-title">
-					Explore the <br />
+					Explore The <br />
 					Best
 					<b>
 						Beautiful <br />
@@ -28,7 +28,7 @@
 			<div class="home__info">
 				<div>
 					<span class="home__info-title">5 best places to visit</span>
-					<a href="#" class="button button--flex button--link info-button">
+					<a href="#" class="button button--flex button--link home__info-button">
 						More <i class="ri-arrow-right-line"></i>
 					</a>
 				</div>
@@ -111,6 +111,7 @@
 .home__info {
 	background-color: var(--first-color);
 	display: flex;
+	align-items: center;
 	padding: 1.5rem 1rem;
 	column-gap: 0.5rem;
 	position: absolute;
@@ -148,6 +149,29 @@
 	.home__info {
 		width: 190px;
 		padding: 1rem;
+	}
+}
+
+/* Medium Screens */
+@media screen and (min-width: 768px) {
+	.home__container {
+		height: 100vh;
+		grid-template-rows: 1.8fr .5fr;
+	}
+
+	.home__data {
+		align-self: flex-end;
+	}
+
+	.home__social {
+		flex-direction: row;
+		align-self: flex-end;
+		margin-bottom: 3rem;
+		column-gap: 2.2rem;
+	}
+
+	.home__info {
+		bottom: 3rem;
 	}
 }
 </style>

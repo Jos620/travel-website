@@ -20,7 +20,13 @@
 
                 <div class="footer__data">
                     <FooterList title="About" :data="about" />
+                </div>
+
+                <div class="footer__data">
                     <FooterList title="Company" :data="company" />
+                </div>
+
+                <div class="footer__data">
                     <FooterList title="Support" :data="support" />
                 </div>
             </div>
@@ -114,5 +120,17 @@ export default {
 
 .footer__terms-link:hover {
     color: var(--text-color);
+}
+
+/* Medium Screens */
+@media screen and (min-width: 768px) {
+    .footer__rights {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer__description {
+        margin-right: 1rem;
+    }
 }
 </style>

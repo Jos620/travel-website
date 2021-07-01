@@ -185,4 +185,44 @@ export default {
 .change-theme-name {
 	font-size: var(--small-font-size);
 }
+
+
+/* Medium Screens */
+@media screen and (min-width: 768px) {
+	.nav {
+		height: calc(var(--header-height) + 1.5rem);
+	}
+
+	.nav__dark {
+		position: initial;
+	}
+
+	.nav__menu {
+		display: flex;
+		column-gap: 1rem;
+	}
+
+	.nav__list {
+		flex-direction: row;
+		column-gap: 4rem;
+		margin-right: 4rem;
+	}
+
+	.nav__toggle,
+	.nav__close,
+	.change-theme-name {
+		display: none;
+	}
+
+	.change-theme {
+		color: var(--white-color);
+		position: absolute;
+		right: 0.8rem;
+		top: 3px;
+	}
+
+	.scroll-header .change-theme {
+		color: var(--text-color);
+	}
+}
 </style>
