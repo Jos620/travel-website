@@ -6,5 +6,6 @@
 		<Experience />
 		<Video />
 		<Place />
+		<Subscribe />
 	</div>
 </template>
