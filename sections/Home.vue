@@ -142,4 +142,12 @@
 .home__info-img:hover {
 	transform: var(--img-scale);
 }
+
+/* Small Screens */
+@media screen and (max-width: 340px) {
+	.home__info {
+		width: 190px;
+		padding: 1rem;
+	}
+}
 </style>

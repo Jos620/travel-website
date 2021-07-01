@@ -43,4 +43,15 @@ export default {
 .experience__img-two:hover {
 	transform: var(--img-scale);
 }
+
+/* Small Screens */
+@media screen and (max-width: 340px) {
+	.experience__overlay:nth-child(1) {
+		width: 190px;
+	}
+
+	.experience__overlay:nth-child(2) {
+		width: 80px;
+	}
+}
 </style>

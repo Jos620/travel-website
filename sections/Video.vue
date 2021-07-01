@@ -21,4 +21,11 @@
 	text-align: center;
 	margin-bottom: var(--mb-2-5);
 }
+
+/* Small Screens */
+@media screen and (max-width: 340px) {
+	.video__container {
+		padding: 0;
+	}
+}
 </style>

@@ -49,4 +49,15 @@
 	position: relative;
 	padding-bottom: 2rem;
 }
+
+/* Small Screens */
+@media screen and (max-width: 340px) {
+	.experience__content {
+		padding: 0;
+	}
+
+	.experience__img {
+		padding: 0;
+	}
+}
 </style>

@@ -17,4 +17,12 @@
 	grid-template-columns: repeat(2, max-content);
 	justify-content: center;
 }
+
+/* Small Screens */
+@media screen and (max-width: 340px) {
+	.place__container {
+		grid-template-columns: max-content;
+		justify-content: center;
+	}
+}
 </style>
