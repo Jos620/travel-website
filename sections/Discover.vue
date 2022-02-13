@@ -44,6 +44,10 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+.discover__container {
+	overflow: hidden;
+}
+
 /* Medium Screens */
 @media screen and (min-width: 768px) {
 	.discover__container {
